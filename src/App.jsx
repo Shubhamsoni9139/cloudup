@@ -10,15 +10,15 @@ function App() {
   const saveImage = async () => {
     const data = new FormData();
     data.append("file", image);
-    data.append("upload_preset", "mycloud");
-    data.append("cloud_name", "dkp2hautu");
+    data.append("upload_preset", "MyCloud");
+    data.append("cloud_name", "dt8emxboh");
 
     try {
       if (image === null) {
         return toast.error("Please Upload an Image");
       }
 
-      const res = await fetch('https://api.cloudinary.com/v1_1/dkp2hautu/image/upload', {
+      const res = await fetch('https://api.cloudinary.com/v1_1/dt8emxboh/image/upload', {
         method: "POST",
         body: data
       });
